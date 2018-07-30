@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {background:  navy;
+      font-family: "Courier New", Monospace;}
+     
+hr {color: hotpink;
+    background-color: hotpink;
+    height: 3px;
+    marigin-top: 5px;
+    margin-bottom: 5px;}
+
+#header, #footer {background: purple;
+		 border-top: 10px solid yellow;
+		 border-bottom: 10px solid yellow;}
+
+h1, h2 {text-align: center;
+		color: white;
+        font-size:30px;}
+
+ul {list-style-type: none;
+    float: center;
+    text-align: center;}
+  
+   
+a {color: hotpink;
+   text-decoration: none;}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {color: orange;
+    font-size:25px;}
+    
+p, ol {font-size:20px;
+   color: cyan;}
+    
+</style>
+
+<title>IPv6</title>
+</head>
+
+<body>
+
+<div id="header">
+    <h1>IPv6</h1>
+    <h2>Internet Protocol Version 6</h2>
+
+    <ul>
+    <li><a href="#1">What is an IP address?</a></li>
+    <li><a href="#2">What is IPv6?</a></li>
+    <li><a href="#3">How will it work?</a></li>
+    <li><a href="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/FinalPaper.html">Final Paper</a></li>
+    </ul>
+</div>
+
+<div id="content">
+												<h3 id="1">What is an IP address?</h3>
+	<p>IP is short for <b>Internet Protocol.</b> An IP address is a numerical label assigned to each device connected to a computer	 	network so that messages can be sent and received in the same format. It looks like this (for now):</p>	
+	<img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/IPv4%20Address.PNG" alt="IPv4 Address" height="100px" width="400px">
+	<p>The current protocol we are using is called <b>IPv4</b>. It was created in 1973 by the founders of the internet Vint Cerf and Robert E. Khan and it waswidely adopted in the early 1980's. This version uses <b>32 bits</b> per address, as shown in this picture:</p> 
+    <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/IPv4%20Breakdown.PNG" alt="IPv4 Breakdown" height="150px" width="400px">
+	<p>The <b>problem</b> with this version is that it only offers about <b>4 billion unique addresses</b> and we will run out soon. No one expected the internet to be so popular!</p>
+    <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/Statistics.gif" alt="Statistics" height="130px" width="410px">
+
+  <hr>
+  												<h3 id="2">What is IPv6?</h3>
+  <p>The solution is IPv6: a new and longer IP address format. Its development started in 1992 by the <b>Internet Engineering Task Force (IETF)</b> and later deployed to the world in 2012. An IPv6 address looks like this:</p>
+  <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/IPv6%20Address.PNG" alt="IPv4 Breakdown" height="90px" width="800px">
+  <p>It uses <b>128 bits</b> per address, which creates 340 undecillion unique addresses. This is more than enough for every grain of sand on earth (we're talking beaches AND desserts) to have its own <b>unique IP address</b>.
+</p>
+  <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/IPv6%20Breakdown.PNG" alt="IPv4 Breakdown" height="200px" width="700px" style="float: left; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
+  
+  <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/Surprised-baby.jpg" alt="Surprised Baby" height="200px" width="70px" style="float: left; width: 35%; margin-right: 1%; margin-bottom: 0.5em;">
+  <p style="clear: both;"></p>
+ 
+  <hr>
+                                          <h3 id="3">Implementation / Effects</h3>
+  <p>Change is hard and expensive therefore changing to IPv6 is a multi year transition that will take some patience. These are some of the roadblocks that IPv6 is currently facing:</p> 
+    <ol>
+  	<li><p>We want to completely replace IPv4 which takes time to change all the addresses we already have.</p></li>
+    <li><p>IPv4 and IPv6 are not meant to work together which makes the transition also a tad more complicated. Although there has been some things created to allow exchange between the two, this is only a temporary fix.</p></li>
+    <li><p>Internet service providers find it too expensive to switch to solely IPv6 equipment or dual stack gear that can handle both protocols.</p></li>
+   </ol>
+  <p>However, there are many reasons why no one will give up on IPv6. Aside from providing many more addresses to allow more computers to be connected to the network, IPv6 has many more advantages to IPv4. Many of them I can't throughly explain due to my lack of understading of some computer science concepts, but there is one in particular that we have seen in class: <b>Packet Headers!!</b></p>
+  <img src="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/IP%20Headers.PNG" alt="IP Headers" height="500px" width="800px">
+  <p>As you can see in the picture above header data that will be sent with every package will be larger in size but less complex. A lot of the components that were necessary to acompany IPv4 will be no longer needed in IPv6.</p>
+                                         
+</div>
+
+<div id="footer">
+	<h2>That's All Folks!</h2>
+	<ul>
+    <li><a href="#1">What is an IP address?</a></li>
+    <li><a href="#2">What is IPv6?</a></li>
+    <li><a href="#3">How will it work?</a></li>
+    <li><a href="http://www.cs.smith.edu/~cs102a-aa/Final%20Project/Sources.html">Sources</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
